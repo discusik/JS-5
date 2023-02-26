@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+    <html>
+        <body>
+            <script>
+                alert('Программа для нахождения дискрименанта по формуле D = b * b - 4 * a * c.');
+                    let a = prompt('Введите число а');
+                    let b = prompt('Введите число b');
+                    let c = prompt('Введите число c');
+                /*function calcD (a, b, c) { 
+                    return b * b - 4 * a * c;
+                            }*/
+                            calcD = (a, b, c) => b * b - 4 * a * c;
+                            (isNaN(a) || isNaN(b) || isNaN(c)) ? alert('Неверно введены значения . Обновите страницу и попробуйте еще раз:(') : dscriminant = calcD(a , b ,c);
+                alert('D='+dscriminant);
+            </script>
+        </body>
+    </html>
